@@ -9,9 +9,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
+import LoginButton from "./auth/LoginButton";
 
 export const NavbarUser = () => {
-  let user = true;
+  let user = false;
 
   return (
     <div className=" hidden lg:flex items-center">
@@ -38,26 +39,9 @@ export const NavbarUser = () => {
           </DropdownMenu>
         </div>
       ) : (
-        <div className=" flex  items-center  gap-3">
-          <Link
-            href="/"
-            className={buttonVariants({
-              variant: "ghost",
-              className: "text-[15px]",
-            })}
-          >
-            Login
-          </Link>
-          <Link
-            href="/"
-            className={buttonVariants({
-              variant: "default",
-              className: "text-[15px]",
-            })}
-          >
-            Register
-          </Link>
-        </div>
+        <LoginButton mode="modal" asChild>
+          <Button>Sign In</Button>
+        </LoginButton>
       )}
     </div>
   );

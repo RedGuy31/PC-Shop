@@ -19,7 +19,7 @@ import Link from "next/link";
 import { Separator } from "./ui/separator";
 
 export const NavItemsMobile = () => {
-  let user = true;
+  let user = false;
   return (
     <div className="md:hidden">
       <Sheet>
@@ -174,7 +174,7 @@ export const NavItemsMobile = () => {
             ) : (
               <>
                 <Link
-                  href="/"
+                  href="/auth/login"
                   className={buttonVariants({
                     variant: "ghost",
                     className: "w-full",
