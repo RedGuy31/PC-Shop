@@ -4,10 +4,11 @@ import { NavItems } from "./NavItems";
 import Image from "next/image";
 
 import { NavbarUser } from "./NavbarUser";
+import { NavItemsMobile } from "./NavItemsMobile";
 
 export const Navigation = () => {
   return (
-    <nav className=" sticky z-[100] h-14 inset-x-0 top-0 w-full border-b shadow-sm border-zinc-200 bg-zinc-50 backdrop-blur-lg transition-all">
+    <nav className=" sticky z-[40] h-14 inset-x-0 top-0 w-full border-b shadow-sm border-zinc-200 bg-zinc-50 backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between border-b shadow-sm border-zinc-200">
           <Link href="/" className=" flex items-center gap-1">
@@ -16,6 +17,7 @@ export const Navigation = () => {
           </Link>
           <NavItems />
           <NavbarUser />
+          <NavItemsMobile />
         </div>
       </MaxWidthWrapper>
     </nav>
