@@ -6,6 +6,7 @@ import {
   SheetDescription,
   SheetHeader,
   SheetTitle,
+  SheetClose,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import {
@@ -43,92 +44,110 @@ export const NavItemsMobile = () => {
                   Category
                 </AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-3 z-[50]">
-                  <Link
-                    href="/"
-                    className={buttonVariants({
-                      variant: "ghost",
-                      className: "w-full",
-                    })}
-                  >
-                    sadfjsdfjlkjdlsjfjlsd
-                  </Link>
-                  <Link
-                    href="/"
-                    className={buttonVariants({
-                      variant: "ghost",
-                      className: "w-full",
-                    })}
-                  >
-                    sadfjsdfjlkjdlsjfjlsd
-                  </Link>
-                  <Link
-                    href="/"
-                    className={buttonVariants({
-                      variant: "ghost",
-                      className: "w-full",
-                    })}
-                  >
-                    sadfjsdfjlkjdlsjfjlsd
-                  </Link>
-                  <Link
-                    href="/"
-                    className={buttonVariants({
-                      variant: "ghost",
-                      className: "w-full",
-                    })}
-                  >
-                    sadfjsdfjlkjdlsjfjlsd
-                  </Link>
-                  <Link
-                    href="/"
-                    className={buttonVariants({
-                      variant: "ghost",
-                      className: "w-full",
-                    })}
-                  >
-                    sadfjsdfjlkjdlsjfjlsd
-                  </Link>
-                  <Link
-                    href="/"
-                    className={buttonVariants({
-                      variant: "ghost",
-                      className: "w-full",
-                    })}
-                  >
-                    sadfjsdfjlkjdlsjfjlsd
-                  </Link>
+                  <SheetClose asChild>
+                    <Link
+                      href="/auth/login"
+                      className={buttonVariants({
+                        variant: "ghost",
+                        className: "w-full",
+                      })}
+                    >
+                      sadfjsdfjlkjdlsjfjlsd
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      href="/"
+                      className={buttonVariants({
+                        variant: "ghost",
+                        className: "w-full",
+                      })}
+                    >
+                      sadfjsdfjlkjdlsjfjlsd
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      href="/"
+                      className={buttonVariants({
+                        variant: "ghost",
+                        className: "w-full",
+                      })}
+                    >
+                      sadfjsdfjlkjdlsjfjlsd
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      href="/"
+                      className={buttonVariants({
+                        variant: "ghost",
+                        className: "w-full",
+                      })}
+                    >
+                      sadfjsdfjlkjdlsjfjlsd
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      href="/"
+                      className={buttonVariants({
+                        variant: "ghost",
+                        className: "w-full",
+                      })}
+                    >
+                      sadfjsdfjlkjdlsjfjlsd
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      href="/"
+                      className={buttonVariants({
+                        variant: "ghost",
+                        className: "w-full",
+                      })}
+                    >
+                      sadfjsdfjlkjdlsjfjlsd
+                    </Link>
+                  </SheetClose>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-            <Link
-              href="/"
-              className={buttonVariants({
-                variant: "ghost",
-                className: "w-full",
-              })}
-            >
-              Instalment
-            </Link>
+            <SheetClose asChild>
+              <Link
+                href="/"
+                className={buttonVariants({
+                  variant: "ghost",
+                  className: "w-full",
+                })}
+              >
+                Instalment
+              </Link>
+            </SheetClose>
             <Separator />
-            <Link
-              href="/"
-              className={buttonVariants({
-                variant: "ghost",
-                className: "w-full",
-              })}
-            >
-              Delivery Information
-            </Link>
+            <SheetClose asChild>
+              <Link
+                href="/"
+                className={buttonVariants({
+                  variant: "ghost",
+                  className: "w-full",
+                })}
+              >
+                Delivery Information
+              </Link>
+            </SheetClose>
             <Separator />
-            <Link
-              href="/"
-              className={buttonVariants({
-                variant: "ghost",
-                className: "w-full",
-              })}
-            >
-              Contact
-            </Link>
+            <SheetClose asChild>
+              <Link
+                href="/"
+                className={buttonVariants({
+                  variant: "ghost",
+                  className: "w-full",
+                })}
+              >
+                Contact
+              </Link>
+            </SheetClose>
             <Separator />
             {user ? (
               <Accordion type="single" collapsible className=" w-full">
@@ -142,53 +161,63 @@ export const NavItemsMobile = () => {
                     My Account
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-2 z-[50]">
-                    <Link
-                      href="/"
-                      className={buttonVariants({
-                        variant: "ghost",
-                        className: "w-full",
-                      })}
-                    >
-                      Orders
-                    </Link>
-                    <Link
-                      href="/"
-                      className={buttonVariants({
-                        variant: "ghost",
-                        className: "w-full",
-                      })}
-                    >
-                      Settings
-                    </Link>
-                    <Link
-                      href="/"
-                      className={buttonVariants({
-                        className: "w-full",
-                      })}
-                    >
-                      Logout
-                    </Link>
+                    <SheetClose asChild>
+                      <Link
+                        href="/"
+                        className={buttonVariants({
+                          variant: "ghost",
+                          className: "w-full",
+                        })}
+                      >
+                        Orders
+                      </Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <Link
+                        href="/"
+                        className={buttonVariants({
+                          variant: "ghost",
+                          className: "w-full",
+                        })}
+                      >
+                        Settings
+                      </Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <Link
+                        href="/"
+                        className={buttonVariants({
+                          className: "w-full",
+                        })}
+                      >
+                        Logout
+                      </Link>
+                    </SheetClose>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
             ) : (
               <>
-                <Link
-                  href="/auth/login"
-                  className={buttonVariants({
-                    variant: "ghost",
-                    className: "w-full",
-                  })}
-                >
-                  Login
-                </Link>
+                <SheetClose asChild>
+                  <Link
+                    href="/auth/login"
+                    className={buttonVariants({
+                      variant: "ghost",
+                      className: "w-full",
+                    })}
+                  >
+                    Login
+                  </Link>
+                </SheetClose>
                 <Separator />
-                <Link
-                  href="/"
-                  className={buttonVariants({ className: "w-full" })}
-                >
-                  Register
-                </Link>
+                <SheetClose asChild>
+                  <Link
+                    href="/"
+                    className={buttonVariants({ className: "w-full" })}
+                  >
+                    Register
+                  </Link>
+                </SheetClose>
               </>
             )}
           </div>

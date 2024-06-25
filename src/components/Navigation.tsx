@@ -2,7 +2,6 @@ import Link from "next/link";
 import { MaxWidthWrapper } from "./MawWidthWrapper";
 import { NavItems } from "./NavItems";
 import Image from "next/image";
-
 import { NavbarUser } from "./NavbarUser";
 import { NavItemsMobile } from "./NavItemsMobile";
 
